@@ -6,10 +6,12 @@ import { NgForComponent } from './ng-for/ng-for.component';
 import { NgClass } from '@angular/common';
 import { NgclassComponent } from "./ngclass/ngclass.component";
 import { NgstyleComponent } from './ngstyle/ngstyle.component';
+import { FormComponent } from './form/form.component';
+import { SignalComponent } from './signal/signal.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, FormsModule, NgifComponent, NgForComponent, NgClass, NgclassComponent, NgstyleComponent],
+  imports: [ SignalComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

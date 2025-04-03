@@ -1,0 +1,18 @@
+<form>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Введите email">
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Пароль</label>
+        <input type="password" [(ngModel)]="password" class="form-control" id="password" placeholder="Введите пароль" name="password">
+    </div>
+    <div class="mb-3">
+        <label for="confirmPassword" class="form-label">Подтвердите пароль</label>
+        <input type="password" [(ngModel)]="confirmPassword" class="form-control" id="confirmPassword" placeholder="Повторите пароль" name="confirmPassword">
+    </div>
+    <p *ngIf="password !== confirmPassword" style="color: red">{{ errors.password }}</p>
+    <input type="checkbox" [(ngModel)]="check" name="check">
+    <br>
+    <button [disabled]="!check" type="submit" class="btn btn-primary">Отправить</button>
+</form>

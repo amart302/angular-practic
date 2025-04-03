@@ -12,6 +12,7 @@ export class NgifComponent {
   div1Visable: boolean = false;
   number1: string = "";
   number2: string = "";
+  day: string = "";
 
   showDiv1(){
     this.div1Visable = true;

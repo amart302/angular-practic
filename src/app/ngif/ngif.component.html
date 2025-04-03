@@ -12,5 +12,16 @@
     </div>
 </div>
 <div class="row">
-    <div class="col-3"></div>
+    <div class="col-3">
+        <input type="text"[(ngModel)]="day">
+    </div>
+    <div class="col-3">
+        @if(day === "mon"){
+            <span>Monday</span>
+        }@else if(day === "tue"){
+            <span>Tuesday</span>
+        }@else {
+            <span>Enter Proper Day</span>
+        }
+    </div>
 </div>
